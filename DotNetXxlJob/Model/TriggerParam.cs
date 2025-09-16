@@ -2,7 +2,6 @@ using System.Runtime.Serialization;
 
 namespace DotNetXxlJob.Model
 {
-    
     [DataContract]
     public class TriggerParam
     {
@@ -13,6 +12,7 @@ namespace DotNetXxlJob.Model
 
         [DataMember(Name = "executorHandler", Order = 2)]
         public string ExecutorHandler { get; set; }
+
         [DataMember(Name = "executorParams", Order = 3)]
         public string ExecutorParams{ get; set; }
         
@@ -24,10 +24,10 @@ namespace DotNetXxlJob.Model
         
         [DataMember(Name = "logId",Order = 5)]
         public long LogId { get; set; }
+
         [DataMember(Name = "logDateTime", Order = 6)]
         public long LogDateTime{ get; set; }
         
-
         [DataMember(Name = "glueType",Order = 7)]
         public string GlueType{ get; set; }
         
@@ -39,6 +39,7 @@ namespace DotNetXxlJob.Model
 
         [DataMember(Name = "broadcastIndex",Order = 10)]
         public int BroadcastIndex{ get; set; }
+
         [DataMember(Name = "broadcastTotal",Order = 11)]
         public int BroadcastTotal{ get; set; }
     }

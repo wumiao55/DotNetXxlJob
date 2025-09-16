@@ -61,7 +61,6 @@ namespace DotNetXxlJob
         /// <exception cref="NotImplementedException"></exception>
         public ReturnT Execute(TriggerParam triggerParam)
         {
-
             var executor = this._executorFactory.GetTaskExecutor(triggerParam.GlueType);
             if (executor == null)
             {

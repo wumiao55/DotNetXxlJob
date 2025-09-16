@@ -4,7 +4,7 @@ using DotNetXxlJob.Model;
 namespace DotNetXxlJob.TaskExecutors
 {
     /// <summary>
-    /// 实现 IJobHandler的执行器
+    /// Bean任务执行器
     /// </summary>
     public class BeanTaskExecutor : ITaskExecutor
     {

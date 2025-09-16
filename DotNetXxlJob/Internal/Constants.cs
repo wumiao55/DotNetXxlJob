@@ -41,11 +41,16 @@ namespace DotNetXxlJob.Internal
         //Admin集群中的某台机器请求失败多少次后熔断
         public const int AdminServerCircuitFailedTimes = 3;
 
- 
 
         public static class GlueType
         {
             public const string BEAN = "BEAN";
+            public const string GLUE_PYTHON = "GLUE_PYTHON";
+            public const string GLUE_SHELL = "GLUE_SHELL";
+            public const string GLUE_POWERSHELL = "GLUE_POWERSHELL";
+            public const string GLUE_NODEJS = "GLUE_NODEJS";
+            public const string GLUE_CSHARP = "GLUE_CSHARP";
+            public const string GLUE_PHP = "GLUE_PHP";
         }
 
         public static class ExecutorBlockStrategy

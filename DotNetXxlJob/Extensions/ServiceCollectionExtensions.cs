@@ -51,7 +51,6 @@ namespace DotNetXxlJob.Extensions
 
         private static IServiceCollection AddXxlJobExecutorServiceDependency(this IServiceCollection services)
         {
-
             //可在外部提前注册对应实现，并替换默认实现
             services.TryAddSingleton<IJobLogger, JobLogger>();
             services.TryAddSingleton<IJobHandlerFactory, DefaultJobHandlerFactory>();
@@ -64,6 +63,11 @@ namespace DotNetXxlJob.Extensions
             services.AddSingleton<CallbackTaskQueue>();
             services.AddSingleton<AdminClient>();
             services.AddSingleton<ITaskExecutor, TaskExecutors.BeanTaskExecutor>();
+            services.AddSingleton<ITaskExecutor, TaskExecutors.PythonTaskExecutor>();
+            services.AddSingleton<ITaskExecutor, TaskExecutors.ShellTaskExecutor>();
+            services.AddSingleton<ITaskExecutor, TaskExecutors.PowerShellTaskExecutor>();
+            services.AddSingleton<ITaskExecutor, TaskExecutors.NodejsTaskExecutor>();
+            services.AddSingleton<ITaskExecutor, TaskExecutors.CSharpTaskExecutor>();
 
             return services;
         }
