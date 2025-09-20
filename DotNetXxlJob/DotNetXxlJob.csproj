@@ -4,8 +4,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Description>xxl-job的dotnet core 执行器实现</Description>
-    <PackageReleaseNotes>xxl-job的dotnet core 执行器实现</PackageReleaseNotes>
-    <Version>1.1.1</Version>
+    <PackageReleaseNotes>添加Java任务执行器,支持GLUE_JAVA运行模式</PackageReleaseNotes>
+    <Version>1.1.2</Version>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
