@@ -111,7 +111,7 @@ namespace DotNetXxlJob
             return ReturnT.SUCCESS;
         }
 
-        private ReturnT IdleBeat(IdleBeatRequest req)
+        private ReturnT IdleBeat(IdleBeatRequest? req)
         {
             if(req == null)
             {
@@ -120,7 +120,7 @@ namespace DotNetXxlJob
             return this._jobDispatcher.IdleBeat(req.JobId);
         }
 
-        private ReturnT Kill(KillRequest req)
+        private ReturnT Kill(KillRequest? req)
         {
             if (req == null)
             {
@@ -136,7 +136,7 @@ namespace DotNetXxlJob
         ///  read Log
         /// </summary>     
         /// <returns></returns>
-        private ReturnT Log(LogRequest req)
+        private ReturnT Log(LogRequest? req)
         {
             if (req == null)
             {
@@ -152,8 +152,12 @@ namespace DotNetXxlJob
         /// </summary>
         /// <param name="triggerParam"></param>
         /// <returns></returns>
-        private ReturnT Run(TriggerParam triggerParam)
+        private ReturnT Run(TriggerParam? triggerParam)
         {
+            if (triggerParam == null)
+            {
+                return ReturnT.Failed("Run Error");
+            }
             return this._jobDispatcher.Execute(triggerParam);
         }
         #endregion

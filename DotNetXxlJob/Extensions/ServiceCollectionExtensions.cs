@@ -68,6 +68,7 @@ namespace DotNetXxlJob.Extensions
             services.AddSingleton<ITaskExecutor, TaskExecutors.PowerShellTaskExecutor>();
             services.AddSingleton<ITaskExecutor, TaskExecutors.NodejsTaskExecutor>();
             services.AddSingleton<ITaskExecutor, TaskExecutors.CSharpTaskExecutor>();
+            services.AddSingleton<ITaskExecutor, TaskExecutors.JavaTaskExecutor>();
 
             return services;
         }
