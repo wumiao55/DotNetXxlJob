@@ -50,6 +50,7 @@ namespace DotNetXxlJob.Internal
             public const string GLUE_POWERSHELL = "GLUE_POWERSHELL";
             public const string GLUE_NODEJS = "GLUE_NODEJS";
             public const string GLUE_CSHARP = "GLUE_CSHARP";
+            public const string GLUE_GROOVY = "GLUE_GROOVY";
             public const string GLUE_PHP = "GLUE_PHP";
         }
 

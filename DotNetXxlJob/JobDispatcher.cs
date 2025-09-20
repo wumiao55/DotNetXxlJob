@@ -41,7 +41,6 @@ namespace DotNetXxlJob
         /// 尝试移除JobTask
         /// </summary>
         /// <param name="jobId"></param>
-        /// <param name="reason"></param>
         /// <returns></returns>
         public bool TryRemoveJobTask(int jobId)
         {
